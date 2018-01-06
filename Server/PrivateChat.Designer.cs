@@ -37,13 +37,15 @@
             // btnSend
             // 
             this.btnSend.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSend.BackColor = System.Drawing.Color.Magenta;
             this.btnSend.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSend.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnSend.Location = new System.Drawing.Point(309, 299);
             this.btnSend.Name = "btnSend";
             this.btnSend.Size = new System.Drawing.Size(91, 44);
             this.btnSend.TabIndex = 6;
             this.btnSend.Text = "Send";
-            this.btnSend.UseVisualStyleBackColor = true;
+            this.btnSend.UseVisualStyleBackColor = false;
             this.btnSend.Click += new System.EventHandler(this.btnSend_Click);
             // 
             // txtInput
@@ -74,6 +76,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Server.Properties.Resources.nen_ko;
             this.ClientSize = new System.Drawing.Size(417, 354);
             this.Controls.Add(this.btnSend);
             this.Controls.Add(this.txtInput);

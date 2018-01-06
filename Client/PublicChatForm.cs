@@ -18,7 +18,7 @@ namespace Client
             base.OnLoad(e);
             formLogin.Client.Received += _client_Received;
             formLogin.Client.Disconnected += Client_Disconnected;
-            Text = "TCP Chat - " + formLogin.txtIP.Text + " - (Connected as: " + formLogin.txtNickname.Text + ")";
+            Text = "TCP Chat - " + formLogin.txtIP.Text + " - (Kết nối bởi: " + formLogin.txtNickname.Text + ")";
             formLogin.ShowDialog();
         }
 
@@ -69,7 +69,7 @@ namespace Client
                 case "pMessage":
                     this.Invoke(() =>
                     {
-                        pChat.txtReceive.Text += "Server says: " + cmd[1] + "\r\n";
+                        pChat.txtReceive.Text += "Server thông báo: " + cmd[1] + "\r\n";
                     });
                     break;
                 case "Disconnect":

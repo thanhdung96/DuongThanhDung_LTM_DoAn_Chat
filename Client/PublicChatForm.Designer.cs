@@ -32,10 +32,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PublicChatForm));
             this.userList = new System.Windows.Forms.ListBox();
             this.menu = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.privateChat = new System.Windows.Forms.ToolStripMenuItem();
             this.txtReceive = new System.Windows.Forms.RichTextBox();
             this.txtInput = new System.Windows.Forms.TextBox();
             this.btnSend = new System.Windows.Forms.Button();
-            this.privateChat = new System.Windows.Forms.ToolStripMenuItem();
             this.menu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -44,9 +44,9 @@
             this.userList.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.userList.ContextMenuStrip = this.menu;
             this.userList.FormattingEnabled = true;
-            this.userList.Location = new System.Drawing.Point(398, 12);
+            this.userList.Location = new System.Drawing.Point(397, 12);
             this.userList.Name = "userList";
-            this.userList.Size = new System.Drawing.Size(129, 342);
+            this.userList.Size = new System.Drawing.Size(129, 407);
             this.userList.TabIndex = 0;
             // 
             // menu
@@ -56,16 +56,24 @@
             this.menu.Name = "menu";
             this.menu.Size = new System.Drawing.Size(139, 26);
             // 
+            // privateChat
+            // 
+            this.privateChat.Image = global::Client.Properties.Resources.Chat_128;
+            this.privateChat.Name = "privateChat";
+            this.privateChat.Size = new System.Drawing.Size(138, 22);
+            this.privateChat.Text = "Private Chat";
+            this.privateChat.Click += new System.EventHandler(this.privateChat_Click);
+            // 
             // txtReceive
             // 
             this.txtReceive.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtReceive.BackColor = System.Drawing.Color.White;
             this.txtReceive.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtReceive.HideSelection = false;
-            this.txtReceive.Location = new System.Drawing.Point(9, 12);
+            this.txtReceive.Location = new System.Drawing.Point(8, 12);
             this.txtReceive.Name = "txtReceive";
             this.txtReceive.ReadOnly = true;
-            this.txtReceive.Size = new System.Drawing.Size(383, 293);
+            this.txtReceive.Size = new System.Drawing.Size(383, 357);
             this.txtReceive.TabIndex = 1;
             this.txtReceive.Text = "";
             this.txtReceive.TextChanged += new System.EventHandler(this.txtReceive_TextChanged);
@@ -73,7 +81,7 @@
             // txtInput
             // 
             this.txtInput.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtInput.Location = new System.Drawing.Point(9, 311);
+            this.txtInput.Location = new System.Drawing.Point(8, 375);
             this.txtInput.Multiline = true;
             this.txtInput.Name = "txtInput";
             this.txtInput.Size = new System.Drawing.Size(286, 44);
@@ -86,7 +94,7 @@
             this.btnSend.BackColor = System.Drawing.Color.Fuchsia;
             this.btnSend.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSend.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnSend.Location = new System.Drawing.Point(301, 311);
+            this.btnSend.Location = new System.Drawing.Point(300, 375);
             this.btnSend.Name = "btnSend";
             this.btnSend.Size = new System.Drawing.Size(91, 44);
             this.btnSend.TabIndex = 3;
@@ -94,20 +102,12 @@
             this.btnSend.UseVisualStyleBackColor = false;
             this.btnSend.Click += new System.EventHandler(this.btnSend_Click);
             // 
-            // privateChat
-            // 
-            this.privateChat.Image = global::Client.Properties.Resources.Chat_128;
-            this.privateChat.Name = "privateChat";
-            this.privateChat.Size = new System.Drawing.Size(138, 22);
-            this.privateChat.Text = "Private Chat";
-            this.privateChat.Click += new System.EventHandler(this.privateChat_Click);
-            // 
             // PublicChatForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Client.Properties.Resources.nen_ko;
-            this.ClientSize = new System.Drawing.Size(537, 361);
+            this.ClientSize = new System.Drawing.Size(536, 423);
             this.Controls.Add(this.btnSend);
             this.Controls.Add(this.txtInput);
             this.Controls.Add(this.txtReceive);

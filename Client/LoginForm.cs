@@ -29,5 +29,20 @@ namespace Client
         {
 
         }
+
+        private void txtIP_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtIP_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtNickname_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

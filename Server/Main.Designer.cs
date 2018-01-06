@@ -100,9 +100,11 @@
             // txtInput
             // 
             this.txtInput.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.txtInput.Location = new System.Drawing.Point(179, 206);
+            this.txtInput.Multiline = true;
             this.txtInput.Name = "txtInput";
-            this.txtInput.Size = new System.Drawing.Size(348, 20);
+            this.txtInput.Size = new System.Drawing.Size(348, 38);
             this.txtInput.TabIndex = 2;
             this.txtInput.Text = "Admin says: Hey";
             this.txtInput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -111,12 +113,15 @@
             // btnSend
             // 
             this.btnSend.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSend.BackColor = System.Drawing.Color.Magenta;
+            this.btnSend.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
+            this.btnSend.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnSend.Location = new System.Drawing.Point(533, 204);
             this.btnSend.Name = "btnSend";
-            this.btnSend.Size = new System.Drawing.Size(75, 23);
+            this.btnSend.Size = new System.Drawing.Size(75, 40);
             this.btnSend.TabIndex = 3;
             this.btnSend.Text = "Send";
-            this.btnSend.UseVisualStyleBackColor = true;
+            this.btnSend.UseVisualStyleBackColor = false;
             this.btnSend.Click += new System.EventHandler(this.btnSend_Click);
             // 
             // txtReceive
@@ -125,7 +130,7 @@
             this.txtReceive.Location = new System.Drawing.Point(12, 11);
             this.txtReceive.Name = "txtReceive";
             this.txtReceive.ReadOnly = true;
-            this.txtReceive.Size = new System.Drawing.Size(161, 216);
+            this.txtReceive.Size = new System.Drawing.Size(161, 233);
             this.txtReceive.TabIndex = 4;
             this.txtReceive.Text = "";
             this.txtReceive.TextChanged += new System.EventHandler(this.txtReceive_TextChanged);
@@ -134,7 +139,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(616, 239);
+            this.BackColor = System.Drawing.SystemColors.MenuText;
+            this.BackgroundImage = global::Server.Properties.Resources.nen_ko;
+            this.ClientSize = new System.Drawing.Size(616, 256);
             this.Controls.Add(this.txtReceive);
             this.Controls.Add(this.btnSend);
             this.Controls.Add(this.txtInput);
